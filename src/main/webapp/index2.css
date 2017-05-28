@@ -1,0 +1,114 @@
+body {
+    background-color: ghostwhite;
+}
+
+section.jumbotron {
+    background-color: powderblue;
+    color: azure;
+    border-bottom:10px solid darkcyan;
+    border-bottom-color: darkcyan;
+}
+
+section h1{
+    color: antiquewhite;
+}
+
+a {
+    background-color: PowderBlue;
+    font-size: 40px;
+    color: White;
+    font-family: sans-serif;
+    text-align:center;
+}
+
+
+section img {
+    width: 80%;
+}
+
+footer.jumbotron {
+    background-color:darkcyan;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color:aliceblue;
+    margin-bottom:0px;
+}
+
+
+
+footer p {
+
+}
+
+#start{
+    background-color: dodgerblue;
+    color:white;
+    font-size: 24px;
+    display: block;
+    /*margin-left:100px;*/
+}
+#reg{
+    background-color: dodgerblue;
+    color:white;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#signup{
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-family: Arial;
+    color:coral;
+    font-weight: 600;
+    margin-bottom:5px;
+    padding-top: 4px;
+}
+
+.checkbox{
+    color:coral;
+}
+
+.form-group input[type="password"],.form-group input[type="email"],.form-group input[type="name"]
+{
+    font-size:24px;
+    height:auto;
+    max-width: 400px;
+}
+
+.fR {
+    margin-left: 20px;
+}
+
+.vallet{
+    margin-top: 10px;
+    background-image: url("Layer%201.png");
+    padding-top: 170px;
+    background-repeat:no-repeat;
+    background-position: top;
+    padding-bottom: 70px;
+    background-size: 480px;
+
+}
+
+section {
+    /*padding-left: 50px;*/
+    padding-bottom: 50px;
+}
+
+#auth-info{
+    margin: 5px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+#btnStart{
+    margin-bottom: 20px;
+}
+
+#auth1 {
+    background-color: green;
+
+}

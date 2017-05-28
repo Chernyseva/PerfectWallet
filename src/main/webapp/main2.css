@@ -1,0 +1,109 @@
+
+body {
+// background-color: ghostwhite;
+}
+
+#up{
+//border: 1px solid black;
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:100px;
+    right:100px;
+    color: red;
+    display:none;
+    text-indent:-9999px;
+    background: url("icon_top.png");
+}
+
+section.jumbotron {
+    background-color: powderblue;
+    color: azure;
+    border-bottom:10px solid darkcyan;
+    border-bottom-color: darkcyan;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+section h1, section h2{
+    color: antiquewhite;
+    display: block;
+    text-align: right;
+    font-family: Helvetica;
+}
+
+a {
+//background-color: PowderBlue;
+    font-size: 40px;
+//color: White;
+    color: black;
+    font-family: sans-serif;
+    text-align:center;
+}
+
+footer.jumbotron {
+    background-color:darkcyan;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color:aliceblue;
+    margin-bottom:0px;
+}
+
+.tab1 {
+//margin-top:0px;
+}
+#myTab a {
+    font-size: 16px;
+    padding: 0px 40px;
+}
+
+
+section {
+    /*padding-left: 50px;*/
+    padding-bottom: 50px;
+}
+#dm li a {
+    font-size: 16px;
+}
+
+#mContent{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#addPhoto {
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+#add {
+    margin-bottom: 20px;
+}
+
+.field {
+    min-height: 400px;
+}
+#check {
+//background-color: red;
+    width:200px;
+    height:300px;
+}
+#add {
+//background-color: red;
+}
+#rowAdd {
+
+}
+#sel {
+    font-size: 18px;
+}
+
+.hover {
+    background-color: red!important;
+    cursor: pointer;
+}
+#buts {
+    margin-top: 10px;
+}
