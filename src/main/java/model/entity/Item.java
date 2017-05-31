@@ -1,3 +1,5 @@
+package model.entity;
+
 /**
  * Created by Анастасия on 15.04.2017.
  */

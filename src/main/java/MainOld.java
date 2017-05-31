@@ -1,21 +1,35 @@
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+/**
+ * Created by Анастасия on 30.05.2017.
+ */
+public class MainOld {
+}
+
+/*import org.json.JSONException;
+        import org.json.JSONObject;
+
+        import javax.servlet.ServletException;
+        import javax.servlet.annotation.WebServlet;
+        import javax.servlet.http.HttpServlet;
+        import javax.servlet.http.HttpServletRequest;
+        import javax.servlet.http.HttpServletResponse;
+        import javax.servlet.http.HttpSession;
+        import java.io.BufferedReader;
+        import java.io.IOException;
+        import java.io.PrintWriter;
+        import java.util.ArrayList;
+        import java.util.logging.Level;
+        import java.util.logging.Logger;
 
 @WebServlet("/s")
-public class MainServlet extends HttpServlet {
+public class controller.pages.IndexServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -43,7 +57,7 @@ public class MainServlet extends HttpServlet {
 
         Integer pass1 = 0;
         try {
-            pass1 = SqlConnector.getPass(email);
+            pass1 = model.WalletService.getPass(email);
         } catch (Exception e) {
 
         }
@@ -51,8 +65,8 @@ public class MainServlet extends HttpServlet {
         HttpSession httpSession = req.getSession();
         if (pass.equals(pass1) && (!pass.equals(0))) {
             try {
-                System.out.println(SqlConnector.getUserID(email));
-                httpSession.setAttribute("userID", SqlConnector.getUserID(email));
+                System.out.println(model.WalletService.getUserID(email));
+                httpSession.setAttribute("userID", model.WalletService.getUserID(email));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -80,7 +94,7 @@ public class MainServlet extends HttpServlet {
 
             Integer pass1 = 0;
             try {
-                pass1 = SqlConnector.getPass(email);
+                pass1 = model.WalletService.getPass(email);
             } catch (Exception e) {
 
             }
@@ -88,8 +102,8 @@ public class MainServlet extends HttpServlet {
             if(pass.equals(pass1)&&(!pass.equals(0)))
             {
                 try {
-                    System.out.println(SqlConnector.getUserID(email));
-                    httpSession.setAttribute("userID", SqlConnector.getUserID(email));
+                    System.out.println(model.WalletService.getUserID(email));
+                    httpSession.setAttribute("userID", model.WalletService.getUserID(email));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -128,7 +142,7 @@ public class MainServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("do post");
-        Logger logger = Logger.getLogger(MainServlet.class.getName());
+        Logger logger = Logger.getLogger(controller.pages.IndexServlet.class.getName());
         try {
             processRequest(request, response);
         } catch (JSONException ex) {
@@ -140,4 +154,4 @@ public class MainServlet extends HttpServlet {
         return "Short description";
     }//*/
 
-}
+/*}*/

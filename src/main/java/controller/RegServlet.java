@@ -1,14 +1,13 @@
-import org.json.JSONObject;
+package controller;
+
+import model.WalletService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 
 @WebServlet("/reg")
 public class RegServlet extends HttpServlet {
@@ -24,7 +23,7 @@ public class RegServlet extends HttpServlet {
         System.out.println("hash "+passT);
 
         try {
-            SqlConnector.addUser(name, email, passT);
+            WalletService.addUser(name, email, passT);
         } catch (Exception e) {
 
         }

@@ -1,15 +1,18 @@
+package model;
+
+import model.entity.Item;
+
 import javax.naming.NamingException;
 import java.sql.*;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
  * Created by Анастасия on 06.04.2017.
  */
-public class SqlConnector {
+public class WalletService {
     // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/wallet";
     private static final String user = "root";

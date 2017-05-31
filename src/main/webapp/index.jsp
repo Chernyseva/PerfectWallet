@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Perfect Vallet</title>
+    <title>Perfect Wallet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">!-->
@@ -171,7 +171,7 @@
                 data: JSON.stringify(obj),//Передаваемые данные в JSON - формате
                 dataType: 'json',
                 contentType: "application/json",
-                url: '/BServlet',//Название сервлета
+                url: '/StartServlet',//Название сервлета
 
                 success: function (serverData)//Если запрос удачен
                 {

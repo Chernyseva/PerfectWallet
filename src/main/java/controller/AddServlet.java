@@ -1,3 +1,7 @@
+package controller;
+
+import model.WalletService;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +27,7 @@ public class AddServlet extends HttpServlet {
         String cat = req.getParameter("category");
         String userID = req.getSession().getAttribute("userID").toString();
         try {
-            SqlConnector.addItem(date, time, sum, userID, note,cat);
+            WalletService.addItem(date, time, sum, userID, note,cat);
         } catch (Exception e) {
 
         }
