@@ -1,19 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Анастасия
-  Date: 26.12.2016
-  Time: 23:15
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Perfect Wallet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet" type="text/css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">!-->
     <link href="css/bootstrap.min.css" rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </head>
@@ -26,7 +18,6 @@
         </div>
     </div>
 </section>
-<!--<img src="http://www.welovesolo.com/wp-content/uploads/2014/08/1d1e197c7c2cf14589e4274f2efd04ec-details1.jpg"/>!-->
 <section class="container">
     <div class="vallet">
         <div class="row">
@@ -39,13 +30,7 @@
                     <div class="form-group">
                         <input name="pass" type="password" class="form-control" id="pass" placeholder="Password">
                     </div>
-                    <!--<div class="row">
-                        <div id="auth-info"></div>
-                    </div>!-->
                     <div class="row">
-                        <!--<div class="checkbox">
-                            <div class="col-sm-6"><label><input type="checkbox"> Remember me</label></div>
-                        </div>!-->
                         <div class="info">
                             <div class="col-sm-6">
                                 <div id="infoA">
@@ -66,13 +51,6 @@
                     <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                            <!--<button type="submit" class="btn btn-success btn-block" id="start" onclick="location.href='main.html'">Start</button>!-->
-                            <!--<form>
-                                <!--<button type="submit" class="btn btn-success btn-block" id="auth">Start</button>!-->
-                            <!--<input type="button" value="Start" class="btn btn-success btn-block" id="start"
-                                   onclick="location.href='mypage.jsp'">!-->
-                            <!-- <button id="auth1" class="btn btn-success btn-block" >Start</button>
-                         </form>!-->
                             <button id="auth1" class="btn btn-success btn-block" >Start</button>
                         </div>
                     </div>
@@ -104,9 +82,6 @@
                                         <div class="col-sm-5">
                                             <button type="submit" class="btn btn-success btn-block" id="reg2">Do it
                                             </button>
-                                            <!--<button type="button" class="btn btn-success btn-block" id="reg"
-                                                    data-dismiss="modal" onclick="addUser()">Do it
-                                            </button>!-->
                                         </div>
                                     </div>
                                 </div>
