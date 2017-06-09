@@ -109,13 +109,13 @@
     </div>
     <div class="row">
         <div class="col-sm-4">
-            <img src="http://vinil59.ru/image/data/catalog05/2023.png"/>
+            <img src="2023.png"/>
         </div>
         <div class="col-sm-4">
-            <img src="http://abali.ru/wp-content/uploads/2011/10/pie-chart.png"/>
+            <img src="pie-chart.png"/>
         </div>
         <div class="col-sm-4">
-            <img src="http://wsile.ru/uploads/pullups/Igralnya-kubiki.png"/>
+            <img src="Igralnya-kubiki.png"/>
         </div>
     </div>
 </section>
