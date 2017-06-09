@@ -1,30 +1,44 @@
 /**
  * Created by Анастасия on 26.04.2017.
  */
-/*$(document).ready(function(){
-    alert("ready")
-    $("#auth").click(function(){
-        var data = {};
-        alert("auth");
-        data = {"login":$("#email").val(), "password":$("#pass").val()};
+$(document).ready(function(){
+    //alert("script")
+    $("#auth1").click(function () {
+        //alert("auth");
+        data = {"login": $("#email").val(), "password": $("#pass").val()};
+        var obj = {
+            login: $("#email").val(),
+            password: $("#pass").val()
+        }
 //
-        $.ajax
+        //alert("begin ajax")
+        var resultAJAX = $.ajax
         ({
             type: "POST",//Метод передачи
-            data: data,//Передаваемые данные в JSON - формате
-            url: 's',//Название сервлета
-            success:function(serverData)//Если запрос удачен
+            data: JSON.stringify(obj),//Передаваемые данные в JSON - формате
+            dataType: 'json',
+            contentType: "application/json",
+            url: '/StartServlet',//Название сервлета
+
+            success: function (serverData)//Если запрос удачен
             {
-                alert("sucess")
-                $("#auth-info").css({"background-color":serverData.backgroundColor, "height": "50px", "color":"white"});
-                $("#auth-info").html(serverData.serverInfo);
+                //alert("sucess")
+                console.log("b sucess");
+                if (serverData.id=="correct"){
+                    //alert("correct")
+                    window.location.href="/site"
+                }else{
+                    //alert("uncorret")
+                    $("#infoA").css({"background-color":"#CC6666", "height": "20px", "color":"white"});
+                    $("#infoA").html("Wrong email or password");
+                }
+
+
             },
-            error: function(e)//Если запрос не удачен
-            {
-                alert("error")
-                $("#auth-info").css({"background-color":"#CC6666", "height": "50px", "color":"white"});
-                $("#auth-info").html("Запрос не удался!");
+            error: function (jqXHR, exception) {
+                // alert("error")
             }
         });
+
     });
-});*/
+});

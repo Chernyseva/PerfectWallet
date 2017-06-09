@@ -14,7 +14,7 @@
     <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-    <link href="main2.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/Chart.js"></script>
 </head>
 <body>
