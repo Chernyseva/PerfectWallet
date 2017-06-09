@@ -41,6 +41,40 @@ $(function () {
 
     });
 
+$(document).ready(function () {
+    hello("all")
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({scrollTop: 150}, 600);
+        return false;
+    });
+    console.log('hhhhiiii!!!!!1111111111111111111111111')
+    $("#day").click(function () {
+        hello("day");
+    });
+    $("#day1").click(function () {
+        hello("day")
+    });
+    $("#month").click(function () {
+        hello("month")
+    });
+    $("#month1").click(function () {
+        hello("month")
+    });
+    $("#year").click(function () {
+        hello("year")
+    });
+    $("#year1").click(function () {
+        hello("year")
+    });
+    $("#week").click(function () {
+        hello("week")
+    });
+    $("#week1").click(function () {
+        hello("week")
+    });
+});
+
 function hello(str) {
     //alert("Hello Everybody!"+str)
     var data = {};
